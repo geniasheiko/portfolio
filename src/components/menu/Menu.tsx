@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const items = ["", "", "", "", ""]
+
 export const Menu = () => {
     return (
         <nav>
