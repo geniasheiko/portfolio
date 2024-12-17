@@ -10,7 +10,7 @@ export const Main = () => {
     return (
         <StyleMain>
             <Container>
-            <FlexWrapper align={"center"} justify={"space-beetwen"}>
+            <FlexWrapper align={"center"} justify={"space-beetwen"} >
             <div>
                 <SmallText>Hi There</SmallText>
                 <Name>I am <span>Svetlana Dyablo</span></Name>
@@ -27,8 +27,9 @@ export const Main = () => {
 
 const StyleMain = styled.div `
 min-height: 100vh; 
-background-color: #fff5e7;
+background:#1F1F20;
 display: flex;
+
 `
 const MainTitle = styled.h1`
 font-weight: 400;
@@ -62,6 +63,7 @@ span {
 const PhotoWrapper = styled.div`
     position: relative;
     z-index: 0;
+
 
     &::before{
         content: "";

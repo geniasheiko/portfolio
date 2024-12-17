@@ -4,13 +4,17 @@ import { SectionTitle } from '../../../components/SectionTitle';
 import {Icon} from '../../../components/icon/Icon'
 import { Slider } from '../../../components/slider/Slider';
 import { FlexWrapper } from '../../../components/FlexWrapper';
+import { theme } from '../../../styles/Theme';
+import { IconWrapper } from '../sckills/skill/Skill';
 
 export const Testimony = () => {
     return (
         <StyledTestimony>
             <SectionTitle>Testimony</SectionTitle>
             <FlexWrapper direction={"column"} align={"center"}>
+                <IconWrapper>
             <Icon iconId={"react"}/>
+            </IconWrapper>
             <Slider />
             </FlexWrapper>
             </StyledTestimony>
@@ -19,5 +23,9 @@ export const Testimony = () => {
 
 const StyledTestimony = styled.section`
     min-height: 50hv;
-    background-color: #aeb9ff;
+    background-color: ${theme.colors.secondaryBg};
+
+    ${IconWrapper} {
+        margin: 40px 0 72px
+    }
 `
